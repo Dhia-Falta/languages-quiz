@@ -1,0 +1,194 @@
+/*custom font*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+/*basic reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: montserrat, arial, verdana !important;
+}
+
+.flags input[type=radio]#en-input,
+    #fr-input,
+    #tr-input,
+    #ger-input,
+    #it-input,
+    #sp-input,
+    #ru-input{ display: none; }
+
+.flags .en-label{
+background-image: url(https://image.freepik.com/free-photo/flag-united-kingdom_1401-252.jpg);
+filter: opacity(60%);
+}
+
+.flags .fr-label{
+background-image: url(https://image.freepik.com/free-photo/flag-france_1401-114.jpg);
+filter: opacity(60%);    
+}
+
+.flags .tr-label{
+background-image: url(https://image.freepik.com/free-photo/flag-turkey_1401-245.jpg);
+filter: opacity(50%)   
+}
+
+.flags .ger-label{
+background-image: url(https://image.freepik.com/free-photo/flag-germany_1401-118.jpg);
+filter: opacity(50%)
+}
+
+.flags .it-label{
+background-image: url(https://image.freepik.com/free-photo/flag-italy_1401-137.jpg);
+filter: opacity(50%)
+}
+
+.flags .sp-label{
+background-image: url(https://image.freepik.com/free-photo/flag-spain_1401-228.jpg);
+filter: opacity(50%)
+}
+
+.flags .ru-label{
+background-image: url(https://image.freepik.com/free-photo/flag-russia_1401-206.jpg);
+filter: opacity(50%)
+}
+
+.infomations label {
+    margin-bottom: 0px;
+}
+
+.flags label {
+background-repeat: no-repeat;
+background-size: contain; 
+height: 131px;
+width: 194px;
+border-radius: 10px;
+-webkit-transition-duration: .2s;
+-moz-transition-duration: .2s;
+-o-transition-duration: .2s;
+transition-duration: .2s;
+cursor: pointer;
+}
+
+.flags input[type="radio"]:checked+label{ 
+  transform: scale(1.1);
+  border-radius: 10px;
+  border: 3px solid dodgerblue;
+  filter: opacity(100%);
+}
+
+.flags p {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.custom-control {
+    margin-bottom: 3px;
+}
+
+.col-md-6{
+    padding-bottom: 5px;
+}
+
+.col-md-6 h4 {
+    margin-top: 20px;
+}
+
+/*form styles*/
+
+fieldset h3 {
+    font-weight: bold;
+}
+
+fieldset p{
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-test .infomations h4 {
+    margin: 15px 0px 30px;
+}
+
+.form-test {
+    text-align: center;
+    position: relative;
+    margin-top: 30px;
+    padding: 30px 0 30px 0;
+}
+
+.form-test fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 10%;
+
+    /*stacking fieldsets above each other*/
+    position: relative;
+}
+
+.infomations .form-group,
+.en-test .form-group,
+.fr-test .form-group,
+.tr-test .form-group,
+.gr-test .form-group,
+.it-test .form-group,
+.sp-test .form-group,
+.ru-test .form-group{
+	text-align:justify;
+}
+
+.en-test .form-group,
+.fr-test .form-group,
+.tr-test .form-group,
+.gr-test .form-group,
+.it-test .form-group,
+.sp-test .form-group,
+.ru-test .form-group{
+	margin: 3% 0% 1% 15%;
+}
+
+.en-test .form-group,
+.fr-test .form-group,
+.tr-test .form-group,
+.gr-test .form-group,
+.it-test .form-group,
+.sp-test .form-group,
+.ru-test .form-group h4 {
+    margin-bottom: 10px;
+}
+
+@include media-breakpoint-up(sm) {
+  
+}
+
+@media screen and (max-width: 600px) {
+  
+  .form-test{
+    margin-top: 0;
+    padding: 20px 0 20px 0;
+  }
+  .form-test fieldset {
+    width: 100%;
+    margin: 0;
+    padding: 20px 20px;
+  }
+
+  .en-test .form-group,
+  .fr-test .form-group,
+  .tr-test .form-group,
+  .gr-test .form-group,
+  .it-test .form-group,
+  .sp-test .form-group,
+  .ru-test .form-group{
+    margin: 5px auto;
+  }
+}
